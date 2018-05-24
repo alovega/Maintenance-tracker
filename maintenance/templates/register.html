@@ -1,19 +1,36 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register</title>
+<link rel="stylesheet" href="C:\Users\alovega\Maintenance-tracker\maintenance\static\style.css">
 </head>
-<div>
+<body>
+  <div class="wrap">
   <form method="post">
-  <label for="First name">Firstname<label><br>
-  <input name="firstname" id="firstname" required>
-  <label for="lastname">Lastname</label>
-  <input name="lastname" id="lastname" required>
-  <label for="username">Username</label><br>
-  <input name="username" id="username" required><br>
-  <label for="password">Password</label><br>
-  <input type="password" name="password" id="password" required><br>
-  <input type="submit" value="Register">
+  <div class="input">
+  <h1>Register</h1>
+  <p>please fill this form to create an account</p>
+  <hr>
+  <label for="First name"><b>First name</b><label><br>
+   <input name="name"required>
+  <label for="name"><b>Last name</b></label>
+   <input name="name" required>
+  <label for="username"><b>Username</b></label>
+   <input name="username"required>
+  <label for="psw"><b>Password</b></label>
+   <input type="password" placeholder="Enter password" required><br>
+  <label for="psw-repeat"><b>Repeat Password</b></label>
+   <input type="password" placeholder="Repeat password" required><br>
+  <label>
+   <input type="checkbox" checked="checked" name="remember">Remember me
+ </label>
+ <p>By creating this account it means you
+   agree  to our<a href="#">Terms & Privacy</a>.</p>
+ <div class="buttons">
+   <button type="button" class="cancelbtn">Cancel</button>
+   <button type="submit" class="register">Register</button>
+ </div>
+</div>
 </form>
 </div>
+</body>
 </html>
