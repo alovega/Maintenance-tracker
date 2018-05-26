@@ -1,22 +1,88 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 30px;
+  padding-top:0;
+  margin: 0;
  }
-form {
-  border: 3px solid #f1f1f1;
-  max-width: 500px;
-  margin: 200px auto 0;
+ *{box-sizing: border-box;}
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 10%;
+  margin-bottom:0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 225%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.highlight {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+hr{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.container{
+  padding: 16px;
 }
 input[type=text], input[type=password]{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 15px;
+    margin: 5px 0 22px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    border:none;
+    background: #f1f1f1;
+    border-radius: 6px;
 }
-.input{
-  padding: 16px;
+input:focus{
+  background-color: #ddd;
+  outline: none;
+}
+form{
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 3px;
+  border-radius: 8px;
 }
 button {
     background-color: #4CAF50;
@@ -25,11 +91,11 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    border-radius: 6px;
 }
 
 button:hover{
-  opacity:0.8;
+  opacity:1;
 }
 .imgcontainer {
    text-align: center;
@@ -38,7 +104,7 @@ button:hover{
 
 .cancelbtn {
     width: auto;
-    padding: 10px 18px;
+    padding: 14px 20px;
     background-color: #f44336;
 }
 img.login {
@@ -53,3 +119,15 @@ img.login {
     .cancelbtn {
        width: 100%;
     }
+    .submit{
+      width: 100%;
+    }
+  }
+  .footer{
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    height: 10%;
+    color: white;
+    font-size: 200%;
+  }
