@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="C:\Users\alovega\Maintenance-tracker\maintenance\static\style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body style="margin-bottom:0;">
+  <body>
     <div class="topnav" id="myTopnav">
   <a href="#Maintenance" class="app">Maintenance</a>
   <a href="#logout">Log out</a>
@@ -23,16 +23,15 @@
     <th>Request</th>
     <th>date</th>
     <th>Type</th>
-
   <th>Description</th>
   <th>decision</th>
 </tr>
 <tr>
-  <td>Request</td>
+  <td class="td">Request</td>
   <td>04/05/2014</td>
   <td>Maintenance</td>
   <td>Laptop repair</td>
-  <td><select name="decision">
+  <td><select class="admin" name="decision">
        <option value="disapprove">disapprove</option>
        <option value="approve">approve</option>
         </select></td>
@@ -42,7 +41,7 @@
   <td>04/05/2014</td>
   <td>shop repair</td>
   <td>weld in grills</td>
-  <td><select name="decision">
+  <td><select class="admin" name="decision">
        <option value="disapprove">disapprove</option>
        <option value="approve">approve</option>
         </select></td>
@@ -52,7 +51,7 @@
   <td>04/05/2014</td>
   <td>home</td>
   <td>Drainage system</td>
-  <td><select name="decision">
+  <td><select class="admin" name="decision">
        <option value="disapprove">disapprove</option>
        <option value="approve">approve</option>
         </select></td>
@@ -62,7 +61,7 @@
   <td>04/05/2014</td>
   <td>Car</td>
   <td>Maintenance </td>
-  <td><select name="decision">
+  <td><select class="admin" name="decision">
        <option value="disapprove">disapprove</option>
        <option value="approve">approve</option>
         </select></td>
@@ -72,25 +71,25 @@
   <td>04/05/2014</td>
   <td>Class</td>
   <td>Carpentry work</td>
-  <td><select name="decision">
+  <td><select class="admin" name="decision">
        <option value="disapprove">disapprove</option>
        <option value="approve">approve</option>
         </select></td>
 </tr>
-<tr>
+<!-- <tr>
   <td>Repair</td>
   <td>04/05/2014</td>
   <td>pool Maintenance</td>
   <td>repair pool cleaning system</td>
-  <td><select name="decision">
+  <td><select class="admin" name="decision">
        <option value="disapprove">disapprove</option>
        <option value="approve">approve</option>
         </select></td>
-</tr>
+</tr> -->
 </table>
  <button type="button" name="request" style="width:15%">Request</button>
 </div>
-<div class="footer" style="position:absolute; bottom:0;width:100%;">
+<div class="footer">
     <footer>@copyright alwakelvin<br>
     </footer>
 </div>
