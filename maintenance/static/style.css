@@ -251,6 +251,10 @@ tr:nth-child(even) {
       width: 100%;
     }
   }
+  img{
+    max-width: 100%
+    height:auto;
+  }
   .footer{
     margin-top: 0;
     background-color: black;
