@@ -8,7 +8,6 @@ body{
 .topnav {
   overflow: hidden;
   background-color: #333;
-  height: 10%;
   margin-bottom:0;
 }
 
@@ -19,7 +18,7 @@ body{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 225%;
+  font-size: 150%;
 }
 
 .topnav a:hover {
@@ -64,11 +63,6 @@ hr{
   margin-bottom: 25px;
 }
 /* endof styling separating line  */
-/* adds padding to container elements*/
-.container{
-  padding: 16px;
-}
-/*end of styling middle section  */
 
 /*start of styling form */
 
@@ -88,7 +82,9 @@ input[type=text],input[type=password] {
 form{
   border: :1px solid #ccc;
   margin-left: 30%;
-  margin-right: 30%
+  margin-right: 30%;
+  margin-bottom:3px;
+  border-radius: 8px;
 }
 /* end of form */
 /* start set style for buttons*/
@@ -96,13 +92,19 @@ button{
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
- margin: 8px 0;
+  margin: 8px 0;
   border: none;
   cursor:pointer;
   width: 50%;
   opacity: 0.9;
 
 }
+/* adds padding to container elements*/
+.container{
+  padding: 16px;
+}
+/*end of styling middle section  */
+
 button:hover{
   opacity: 1;
 }
