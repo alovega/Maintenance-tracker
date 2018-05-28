@@ -8,10 +8,9 @@
   <body>
     <div class="topnav" id="myTopnav">
   <a href="#Maintenance" class="app">Admin</a>
-  <a href="#logout">Log out</a>
-  <a href="back">Home</a>
-  <a href="#request" class="highlight">Requests</a>
-  <a href="#contact">Contact</a>
+  <a href="login.html">Log out</a>
+  <a href="index.html">Home</a>
+  <a href="admin.html" class="highlight">Requests</a>
   <a href="#about">About</a>
   <a href="javascript:void(0);" class="icon"
     onclick="myFunction()">
@@ -19,6 +18,8 @@
   </a>
 </div>
 <div class="table">
+  <button type="button" name="request" style="width:15%; margin-left:200px;">Request</button>
+  <p></P>
   <table>
     <tr>
     <th>Request</th>
@@ -88,8 +89,23 @@
         </select></td>
 </tr> -->
 </table>
- <button type="button" name="request" style="width:15%">Request</button>
+<p></P>
+
+ <button type="submit" onclick="myFunctionMessage()" style="width:15%; margin-left:190px;">submit</button>
 </div>
+<hr id="about">
+
+  <!-- About Section -->
+  <div class="container">
+    <h3>About Us, Our repairs Man</h3>
+    <div class="w3-padding-32">
+      <h4><b>We value our users</b></h4>
+      <h6><i>With Passion For Real, and honest work</i></h6>
+      <p>Maintenance Tracker App is an application that provides <br>
+        users with the ability to
+        reach out to operations or repairs department regarding repair or
+        maintenance requests and monitor the status of their request.</p>
+    </div>
 <div class="footer" style="position:absolute;">
     <footer>@copyright alwakelvin<br>
     </footer>
