@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width initial scale 1">
+<link rel="stylesheet" href="C:\Users\alovega\Maintenance-tracker\maintenance\static\style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="C:\Users\alovega\Maintenance-tracker\maintenance\static\js\nav.js"></script>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="#Maintenance">Maintenance</a>
+  <a href="#Log out">Logout</a>
+  <a href="#requests" class="highlight">Request</a>
+  <a href="C:\Users\alovega\Maintenance-tracker\maintenance\templates\user-req.html">view request</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon"
+    onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>s
+  <form class="reqForm">
+    <div class="request">
+      <h2>request form</h2>
+      <hr>
+    <label><b>Type</b></label><br>
+    <select name='type' size="1">
+      <option value="maintenance">Maintenance</option>
+      <option value="repair">Repair</option>
+    </select><br>
+    Date:<br><input type="date" name="date" placeholder="date today"><br>
+    <label><b>Priority</b></label><br>
+    <select name="priority" size="1">
+      <option value="emergency">Emergency</option>
+      <option value="urgent">Urgent</option>
+      <option value="high priority">High priority</option>
+    </select><br>
+    <label><b>Description</b></label><br>
+    <textarea name="description" rows="5" cols="20"
+    placeholder="use less than 100 chars describe your request and add google link to your location"></textarea><br>
+    <input type="submit" value="submit">
+  </div>
+</form>
+<div class="footer" style=" bottom:0; width:100%;">
+  <footer>@copyright alwakelvin<br>
+    <!-- <a href="mailto:alovegakevin@gmail.com">someone@example.com</a>. -->
+  </footer>
+  </div>
+</body>
+  </html>
